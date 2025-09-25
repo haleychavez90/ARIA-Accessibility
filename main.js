@@ -23,7 +23,7 @@ mainForm.addEventListener('submit', function (event) {
 // Variables of inputs
 const firstNameInput = document.getElementById("first-name");
 const lastNameInput = document.getElementById("last-name");
-  // Get the output
+  // The output
   outputDiv.innerHTML = `
     <p>My first name is: ${firstNameInput.value}</p>
     <p>My last name is: ${lastNameInput.value}</p>
