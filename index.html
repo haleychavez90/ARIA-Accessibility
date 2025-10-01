@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARIA-Accessibility</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARIA-Accessibility</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css"> 
- 
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -20,16 +15,15 @@
 
         <main>
             <h2>See The Registration To Learn More!</h2>
-            <br action="" class="main_form">
+            <class="main_form">
         <!-- Javascript-->
         <script src="main.js"></script>
-  <br class="header">
+   <class="header">
     <h1>Fill Out The Form Below:</h1>
     <p>The purpose of ARIA and web accessibility is to make webpages for accessible.</p>   
      <p>If you do not use them correctly, they can do more harm than good. </p>
   </header>
 
-  <main>
     <h2>Contact Information:</h2>
 
     <form action="" class="main_form" id="main-form">
@@ -88,8 +82,14 @@
         </div>
         </div>
 
-        <!--Submit Button-->
-      <button class="main_form__submit" type="submit">Send</button>
+        <!--Navigation with ARIA label-->
+        <div class="main_form__field">  
+        <label for="navigation" class="main_form__field__label">Preferred Navigation Method</label>
+  
+        <!--Submit Button with ARIA label-->
+        </select>
+        <small id="navigationHelp" class="main_form__field__help">Please select your preferred navigation method.</small>
+        </div>
     </form>
 
      <div id="output"></div>
