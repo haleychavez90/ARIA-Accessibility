@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA-Accessibility</title>
+
+    <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">ARIA-Accessibility</h1>
+        </header>
+
+        <main>
+            <h2>See The Registration To Learn More!</h2>
+            <class="main_form">
+        <!-- Javascript-->
+        <script src="main.js"></script>
+   <class="header">
+    <h1>Fill Out The Form Below:</h1>
+    <p>The purpose of ARIA and web accessibility is to make webpages for accessible.</p>   
+     <p>If you do not use them correctly, they can do more harm than good. </p>
+  </header>
+
+    <h2>Contact Information:</h2>
+
+    <form action="" class="main_form" id="main-form">
+      <!-- First Name -->
+      <div class="main_form__field">
+        <label for="firstName" class="main_form__field__label">First name</label>
+        <input type="text" id="firstName" class="main_form__field__input" required aria-describedby="firstNameHelp">
+        <small id="firstNameHelp" class="main_form__field__help">Please enter your first name.</small>  
+      </div>
+
+      <!-- Last Name -->
+      <div class="main_form__field">
+        <label for="lastName" class="main_form__field__label">Last name</label>
+        <input type="text" id="lastName" class="main_form__field__input" required aria-describedby="lastNameHelp">
+        <small id="lastNameHelp" class="main_form__field__help">Please enter your last name.</small>
+      </div>
+
+        <!-- Email -->
+        <div class="main_form__field">
+        <label for="email" class="main_form__field__label">Email</label>
+        <input type="email" id="email" class="main_form__field__input" required aria-describedby="emailHelp">
+        <small id="emailHelp" class="main_form__field__help">We'll never share your email with anyone else.</small>
+        </div>
+
+        <!--Birthday-->
+        <div class="main_form__field">  
+        <label for="birthday" class="main_form__field__label">Birthday</label>
+        <input type="date" id="birthday" class="main_form__field__input" required aria-describedby="birthdayHelp">  
+        <small id="birthdayHelp" class="main_form__field__help">Please enter your birthday.</small>
+        </div>
+
+        <!--Interests(Checkbox)-->
+        <div class="main_form__field">  
+        <span class="main_form__field__label">Interests</span>
+        <div class="main_form__field__checkbox-group">
+            <div>
+                <input type="checkbox" id="interest1" name="interests" value="Sports">
+                <label for="interest1">Sports</label>
+            </div>
+            <div>
+                <input type="checkbox" id="interest2" name="interests" value="Music">
+                <label for="interest2">Music</label>
+            </div>
+            <div>
+                <input type="checkbox" id="interest3" name="interests" value="Travel">
+                <label for="interest3">Travel</label>
+            </div>
+            <div>
+                <input type="checkbox" id="interest4" name="interests" value="Reading">
+                <label for="interest4">Reading</label>
+            </div>  
+            <div>
+                <input type="checkbox" id="interest5" name="interests" value="Gaming">
+                <label for="interest5">Gaming</label>
+            </div>
+        </div>
+        </div>
+
+        <!--Navigation with ARIA label-->
+        <div class="main_form__field">  
+        <label for="navigation" class="main_form__field__label">Preferred Navigation Method</label>
+  
+        <!--Submit Button with ARIA label-->
+        </select>
+        <small id="navigationHelp" class="main_form__field__help">Please select your preferred navigation method.</small>
+        </div>
+    </form>
+
+     <div id="output"></div>
+  </main>
+
+  <!-- Javascript -->
+  <script src="./main.js"></script>
+</body>
+</html>
